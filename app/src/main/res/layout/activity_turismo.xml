@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="android.unitec.autolote.turismoActivity">
+    tools:context="android.unitec.autolote.turismoActivity"
+    android:background="@drawable/fondo">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -18,15 +19,18 @@
         android:id="@+id/imageButton6"
         android:layout_below="@+id/imageButton"
         android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton" />
+        android:layout_alignEnd="@+id/imageButton"
+        android:onClick="mini"
+        />
 
     <TextView
         android:text="Turismos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="12dp"
         android:id="@+id/textView3"
         android:textSize="50sp"
+        android:textColor="@android:color/background_light"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -34,8 +38,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/turimos11"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="12dp"
         android:id="@+id/imageButton"
         android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="corola"
+        />
 </RelativeLayout>

@@ -9,34 +9,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="android.unitec.autolote.CamionetaActivity">
+    tools:context="android.unitec.autolote.CamionetaActivity"
+    android:background="@drawable/fondo">
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/camioneta11"
-        android:id="@+id/imageButton2"
+        android:id="@+id/imbHilux"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="Camionetas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/textView2"
-        android:textSize="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/imageButton2"
-        android:layout_alignStart="@+id/imageButton2" />
+        android:layout_centerHorizontal="true"
+        android:onClick="hilux"
+        />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/camioneta22"
-        android:layout_below="@+id/imageButton2"
+        android:layout_below="@+id/imbHilux"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/imageButton5" />
+        android:id="@+id/imbNissan"
+        android:onClick="front"
+        />
+
+    <TextView
+        android:text="Pick-Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView2"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
 
 </RelativeLayout>
